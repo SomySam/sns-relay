@@ -1,0 +1,23 @@
+{
+  "name": "sns-relay",
+  "displayName": "sns-relay",
+  "version": "0.2.0",
+  "description": "블로그 글 하나로 Threads·인스타그램·페이스북 페이지·네이버 블로그 초안을 만들고, 승인한 것만 게시한다",
+  "author": {
+    "name": "SomySam"
+  },
+  "repository": "https://github.com/SomySam/sns-relay",
+  "license": "MIT",
+  "skills": [
+    "./skill/"
+  ],
+  "mcpServers": {
+    "sns-relay": {
+      "command": "node",
+      "args": [
+        "${CLAUDE_PLUGIN_ROOT}/plugin/mcp-launcher.mjs",
+        "mcp"
+      ]
+    }
+  }
+}

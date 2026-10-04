@@ -1,0 +1,47 @@
+{
+  "name": "sns-relay",
+  "version": "0.2.0",
+  "private": true,
+  "description": "블로그 글 하나를 Threads·Instagram·Facebook 페이지·네이버 블로그용 초안으로 바꾸고, 승인한 것만 게시한다",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SomySam/sns-relay.git"
+  },
+  "bin": {
+    "sns-relay": "dist/cli/index.js"
+  },
+  "files": [
+    ".claude-plugin",
+    "dist",
+    "plugin",
+    "rules",
+    "skill"
+  ],
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "pretest": "npm run build",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.2.0",
+    "@mozilla/readability": "^0.6.0",
+    "commander": "^15.0.0",
+    "linkedom": "^0.18.13",
+    "yaml": "^2.9.1",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/client": "^2.2.0",
+    "@types/node": "^22.20.4",
+    "typescript": "^6.0.3",
+    "undici": "^7.30.0",
+    "vitest": "^5.0.2"
+  }
+}

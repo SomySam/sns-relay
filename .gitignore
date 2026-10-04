@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.env
+work/
+config.json
+
+# 개인 작업 자료 — 로컬에만 두고 저장소에는 올리지 않는다
+docs/
+PROGRESS.md
+CLAUDE.md
+AGENTS.md
+.claude/
+.codex/
+.agents/
+*.bundle

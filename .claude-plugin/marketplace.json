@@ -1,0 +1,13 @@
+{
+  "name": "sns-relay",
+  "owner": { "name": "SomySam" },
+  "metadata": { "description": "sns-relay 플러그인 마켓플레이스" },
+  "plugins": [
+    {
+      "name": "sns-relay",
+      "source": "./",
+      "version": "0.2.0",
+      "description": "블로그 글 → SNS 채널별 초안 → 승인 → 게시 (스킬 + MCP)"
+    }
+  ]
+}
